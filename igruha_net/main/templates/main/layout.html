@@ -1,0 +1,52 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+</head>
+<body>
+    <div class="features">
+        <div id="header">
+            <img src="{% static 'main/img/logo1.png' %}" alt="Лого">
+            <span class="logo"><em>Igruha.Net</em></span>
+            {% if user.is_authenticated %}
+                <h7>Hi {{ user.username }}!</h7>
+                <h7><a href="{% url 'logout' %}"><i class="fa-sharp fa-solid fa-circle-xmark"> Выйти</i></a></h7>
+            {% else %}
+                <a href="{% url 'signup' %}"><i class="fa-solid fa-address-card"></i> Регистрация</a> |
+                <h7>Вы не вошли в систему.</h7>
+                <a href="{% url 'login' %}"><i class="fa-solid fa-person-booth"></i> Войти</a>
+            {% endif %}
+        </div>
+        <div id="aside">
+            <h4>Боковая часть</h4>
+            <h6> Здесь должна была находиться панель поиска по категориям. Симулятор, Стратегия и т.д. </h6>
+        </div>
+        <div id="main">
+            <div>
+                <h3>В данный момент на сайте работает только переход по кнопкам и самим играм.
+                А так же система регистрации и авторизации пользователей.</h3>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+        <div id="footer">
+            <h3>Навигация</h3>
+            <h6>
+                <ul id="nav">
+                    <a href="{% url 'home' %}"><li ><i class="fa-solid fa-house"></i> Главная</li></a>
+                    <a href="{% url 'about' %}"><li><i class="fa-solid fa-circle-info"></i> Про нас</li></a>
+                    <a href=""><li><i class="fa-solid fa-phone"></i> Контакты</li></a>
+                </ul>
+            </h6>
+        </div>
+    </div>
+</body>
+</html>

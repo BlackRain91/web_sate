@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #072751;
+}
+
+#some_block {
+  background: red;
+  color: #fff;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  top: 50px;
+}
+
+#header {
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  border-bottom: 4px solid silver;
+  background: black;
+  color: #fff;
+  line-height: 70px;
+  margin-bottom: 50px;
+  float: left;
+}
+
+#header img {
+    background: black;
+    width: 86px;
+    float: left;
+    display: block;
+    margin-left: 20%;
+}
+
+#header .logo {
+    float: left;
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+
+.nav {
+  list-style: none;
+  display: block;
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.nav li {
+  display: inline;
+  background: black;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.nav li:hover {
+  color: black;
+  background: #fafafa;
+  border-radius: 5px;
+  border-color: #333;
+}
+
+.nav li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+#shop {
+    background:#072751;
+}
+
+#main {
+  color: #ffffff;
+  width: 60%;
+  margin-left: 15%;
+  background: #072751;
+  float: left;
+  position: relative;
+  z-index: 1;
+  height: 150vh;
+}
+
+#footer{
+  margin-bottom: 0;
+  margin-top: 60px;
+  border-bottom: 0;
+  border-top: 4px solid silver;
+  float: left;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: #fff;
+}
+
+.game_icon {
+    float: left;
+    margin-left: 140px;
+}
+
+.right {
+    list-style:none;
+    float:left;
+    font-size: 15px;
+    margin-top:30px;
+    display:block;
+    width:100%;
+}
+
+#opisanie {
+    float:left;
+    display:block;
+    margin-top:30px;
+}
+
+#scrin {
+    float:left;
+    margin-left: 120px;
+}
+
+#top {
+    font-size:25px;
+}
+
+.photo:hover {
+    transform: scale(5);
+    display:block;
+    margin-left: 250px;
+}
+
+#shop {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    margin-bottom: 50px;
+}

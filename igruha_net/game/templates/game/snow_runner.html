@@ -1,0 +1,80 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farthest Frontier</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'game/css/game.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+</head>
+<body>
+    <div class="features">
+        <div id="header">
+            <img src="{% static 'main/img/logo1.png' %}" alt="Лого">
+            <span class="logo"><em>Igruha.Net</em></span>
+        </div>
+        <div id="main">
+            <div>
+                <div>
+                    <img class="game_icon" src="static/main/img/snowrunner.jpg" alt="Logo" width="800px">
+                </div>
+                <div>
+                    <h7 id="opisanie">Если вы знакомы с Spintires: MudRunner - симулятором езды по бездорожью, то вы
+                        точно не пропустите новую часть под названием SnowRunner. Уже из названия понятно, что уклон в
+                        игре сделан на сложные зимние условия. Огромная карта с самыми различными локациями, улучшенная
+                        графика, физика и механика, новая система технических улучшений (оснастите свой вид техники
+                        самыми различными примочками), более 40 видов транспорта (начиная от небольших джипов,
+                        заканчивая военной техникой), меняющиеся погодные условия и многое другое вас ждет в SnowRunner.
+                        Выполняйте поставленные задания, чтобы открыть новые комплектующие и новую технику.
+                    </h7>
+                </div>
+                <div class="right">Скриншоты из игры:</div>
+                <div class="right" id="scrin">
+                    <img class="photo" src="static/game/img/snow-runner/1.jpg" width="200px">
+                    <img class="photo" src="static/game/img/snow-runner/2.jpg" alt="Logo" width="200px">
+                    <img class="photo" src="static/game/img/snow-runner/3.jpg" alt="Logo" width="200px">
+                    <img class="photo" src="static/game/img/snow-runner/4.jpg" alt="Logo" width="200px">
+                </div>
+                <div class="right">
+                    <span id="top">Системные требования:</span><br>
+                    <span>✔ Операционная система: Windows 10 (только 64-битные версии) - только для 64 бит!</span><br>
+                    <span>✔ Процессор: Intel i3-4130 с частотой 3,4 ГГц / AMD Ryzen 3 2200U с частотой 3,4 ГГц</span><br>
+                    <span>✔ Оперативная память: 8 GB ОЗУ</span><br>
+                    <span>✔ Видеокарта: 2 ГБ, GeForce GTX 660 / Radeon R9 270</span><br>
+                    <span>✔ DirectX: Версии 11</span><br>
+                    <span>✔ Место на диске: 20 Гб</span><br>
+                </div>
+                <div class="right">
+                    <span>Жанр: симулятор, гонки</span><br>
+                    <span>Разработчик: Saber Interactive</span><br>
+                    <span>Платформа: PC </span><br>
+                    <span>Версия: 17.3 - тестовая </span><br>
+                    <span>Язык интерфейса: английский, русский</span><br>
+                </div>
+                <div class="right">
+                    <h3>
+                        <ul class="nav">
+                            <a href="{% url 'home' %}"><li id="shop"><i class="fa-sharp fa-solid fa-cart-shopping"></i> Купить игру</li></a>
+                        </ul>
+                    </h3>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h3>Навигация</h3>
+            <h6>
+                <ul class="nav">
+                    <a href="{% url 'home' %}"><li ><i class="fa-solid fa-house"></i> Главная</li></a>
+                    <a href="{% url 'about' %}"><li><i class="fas fa-address-card"></i> Про нас</li></a>
+                    <a href=""><li><i class="fa-solid fa-phone"></i> Контакты</li></a>
+                </ul>
+            </h6>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Добро пожаловать на Igruha.Net{% endblock %}
+
+{% block content %}
+        <a class="game" href="{% url 'farthest_frontier' %}">
+            <div>
+                <img class="game_icon" src="static/main/img/farthest_frontier.jpg" alt="Logo" width="200px">
+            </div>
+            <div class="game_name">
+                Farthest Frontier
+            </div><br>
+            <div>
+                <img class="image_pk" src="static/main/img/pk.png" width="24px">
+            </div><br>
+            <div>
+                <span class="top_tag">Симулятор</span>
+                <span class="top_tag">,Инди</span>
+                <span class="top_tag">,Стратегии</span>
+                <span class="top_tag">,Ранний доступ</span>
+            </div>
+        </a>
+        <a class="game" href="{% url 'snow_runner' %}">
+            <div>
+                <img class="game_icon" src="static/main/img/snowrunner.jpg" alt="Logo" width="200px">
+            </div>
+            <div class="game_name">
+                Snow Runner
+            </div><br>
+            <div>
+                <img class="image_pk" src="static/main/img/pk.png" width="24px">
+            </div><br>
+            <div>
+                <span class="top_tag">Симулятор</span>
+                <span class="top_tag">,Гонки</span>
+            </div>
+        </a>
+{% endblock %}
